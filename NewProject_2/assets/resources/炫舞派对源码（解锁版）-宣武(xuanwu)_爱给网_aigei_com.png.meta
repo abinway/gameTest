@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "0e725ac4-a58e-4c67-85ec-8c3dd813bec1",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "炫舞派对源码（解锁版）-宣武(xuanwu)_爱给网_aigei_com": {
+      "ver": "1.0.3",
+      "uuid": "86928c65-cd82-486c-83fb-9110f68ccf7d",
+      "rawTextureUuid": "0e725ac4-a58e-4c67-85ec-8c3dd813bec1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 457,
+      "height": 186,
+      "rawWidth": 457,
+      "rawHeight": 186,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -53,7 +53,7 @@ cc.Class({
         leveAndCco : cc.Label,
         fenshu : 0,
         life : cc.Label,
-        lifevalue : 10,
+        lifevalue : 3,
         isSucess : false,
         gamebig : false,
         ketiji : true,
@@ -79,7 +79,7 @@ cc.Class({
        this.txtlabel.string = "请做好准备...   " ;
        this.jianp();
        this.actionTime = 5;
-       this.speed =0;
+       this.speed =0.2;
        this.leveAndCco.string = "level: " + this.actionTime + " 分数: " + this.fenshu;
        this.life.string = "生命: " + this.lifevalue;
        this.isSucess = false;
@@ -121,18 +121,25 @@ cc.Class({
                 this.lifevalue-=1;
                 if(this.lifevalue <0) this.lifevalue = 0;
             }
+            if(this.lifevalue == 0) {
+                cc.director.loadScene("GameOver");
+            }
             this.isSucess = false;
     //        console.log("删除节点后" + this.fangx.childrenCount);
            
         this.actionTime = this.actionTime - this.speed;
         this.spri.scaleX = 0;
-        this.spri.runAction(cc.scaleTo(3,1));
+        this.spri.runAction(cc.scaleTo(2,1));
+        // var liz = self.node.getChildByName('liz');
+        // liz.x = -600;
        
-}
+        
+    }
        
 
         
     }
+   
             
     
     
@@ -146,24 +153,24 @@ cc.Class({
             var mubiaoZhiz = this.mubiao[this.zhiz-1];
             if(this.zhiz <= this.mubiao.length) {
                 
+                //这里可以不作处理
+                console.log("输入: " + this.zhiling)
                 if(playZhiz === mubiaoZhiz) {
-                    //这里可以不作处理
-                    console.log("输入: " + this.zhiling)
                     var node = new cc.Node("c");
                      var sprite = node.addComponent(cc.Sprite);
                      var usrname = "";
                      switch (mubiaoZhiz) {
                              case 1:
-                             usrname = 'shang2';
+                             usrname = 's2';
                              break;
                              case 2:
-                             usrname = 'xia2';
+                             usrname = 'x2';
                              break;
                              case 3:
-                             usrname = 'zuo2';
+                             usrname = 'z2';
                              break;
                              case 4:
-                             usrname = 'you2';
+                             usrname = 'y2';
                              break;
 
                      
@@ -191,6 +198,9 @@ cc.Class({
                     }
                     this.zhiz = 0;
                     this.zhiling.splice(0,this.zhiling.length);
+                    this.actionTime = 5;
+                    this.maxcountall = 3;
+                    this.level = 0
 
                 }
             }
@@ -212,31 +222,32 @@ cc.Class({
             this.maxcountall = 8
         }
         var cur = 80;//方块的大小
-        for(var i = 0 ; i < maxcount; i++) {
+        for(var  i = 0 ; i < maxcount; i++) {
             var mun = Math.random() * maxcount +1;
             mun = Math.round(mun);
         //    console.log(mun);
             var urlname = "";
             switch (mun) {
                 case 1:
-                    urlname = 'shang1';
+                    urlname = 's1';
                     this.mubiao.push(1);
                     break;
                 case 2:
-                urlname = 'xia1';
+                urlname = 'x1';
                 this.mubiao.push(2);
                     break;
                  case 3:
-                 urlname = 'zuo1';
+                 urlname = 'z1';
                  this.mubiao.push(3);
                     break;
                  case 4:
-                 urlname = 'you1';
+                 urlname = 'y1';
                  this.mubiao.push(4);
                     break;
             
                 default:
-                urlname = 'shang1';
+                urlname = 's1';
+                this.mubiao.push(1);
             }
         //     cc.loader.loadRes(urlname, cc.SpriteFrame,function(err,spriteFrame){  
       
@@ -267,6 +278,10 @@ cc.Class({
             } else {
                 node.x = fangx.x + (i - zhongx ) * cur
             }
+
+
+           
+
         //    console.log("mi: " + fangx.x + " : " + i + "-" + node.x)
         } else {
             var zhongx = Math.round((maxcount) / 2 -1) ;
@@ -335,8 +350,22 @@ cc.Class({
                console.log("提交" +self.spri.scaleX);
                this.isSucess = true;
                self.fenshu +=  (1-self.spri.scaleX) * 100
-               this.leveAndCco.string = "level: " + this.actionTime + " 分数: " + Math.floor(this.fenshu);
+               this.leveAndCco.string = "level: " + this.actionTime.toFixed(2) + " 分数: " + Math.floor(this.fenshu);
                this.ketiji = false;
+               var liz = self.node.getChildByName('liz');
+               var nodeSta = self.fangx.children[0];
+               var nodeEnd = self.fangx.children[self.fangx.childrenCount - 1];
+               console.log(nodeEnd.x);
+               liz.x = -nodeEnd.x;
+               liz.y = self.fangx.y;
+               var finished = cc.callFunc(function(target, liz) {
+                liz.x = -600;
+            }, this, liz);//动作完成后会给玩家加100分
+            var action = cc.sequence(cc.moveTo(0.5,nodeEnd.x,self.fangx.y),finished);
+            liz.runAction(action);
+            self.fangx.removeAllChildren();
+
+              
            }
             
        }

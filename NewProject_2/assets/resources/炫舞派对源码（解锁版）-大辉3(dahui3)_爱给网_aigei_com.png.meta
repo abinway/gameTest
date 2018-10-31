@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "135c6846-17fc-46d1-96b8-aebf0af2f520",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "炫舞派对源码（解锁版）-大辉3(dahui3)_爱给网_aigei_com": {
+      "ver": "1.0.3",
+      "uuid": "3952eb9c-7954-411d-849d-532a8031c944",
+      "rawTextureUuid": "135c6846-17fc-46d1-96b8-aebf0af2f520",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 198,
+      "height": 66,
+      "rawWidth": 198,
+      "rawHeight": 66,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

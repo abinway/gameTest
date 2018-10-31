@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "70866cdb-9ac0-4811-b553-f2e12ce6b3a5",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "html5类似像素鸟的游戏《小猪飞飞》源码-意识(gameo_爱给网_aigei_com": {
+      "ver": "1.0.3",
+      "uuid": "5e2886a0-4341-45cb-a4b2-7f6c34c2297e",
+      "rawTextureUuid": "70866cdb-9ac0-4811-b553-f2e12ce6b3a5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 192,
+      "height": 44,
+      "rawWidth": 192,
+      "rawHeight": 44,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

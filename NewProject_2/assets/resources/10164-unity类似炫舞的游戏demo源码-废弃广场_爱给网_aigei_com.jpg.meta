@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "997f6f34-87f9-4a27-83c1-7e40f8430a1a",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "10164-unity类似炫舞的游戏demo源码-废弃广场_爱给网_aigei_com": {
+      "ver": "1.0.3",
+      "uuid": "3fb2a235-7c6f-4d15-ba75-a2de5cbbb828",
+      "rawTextureUuid": "997f6f34-87f9-4a27-83c1-7e40f8430a1a",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1600,
+      "height": 1200,
+      "rawWidth": 1600,
+      "rawHeight": 1200,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

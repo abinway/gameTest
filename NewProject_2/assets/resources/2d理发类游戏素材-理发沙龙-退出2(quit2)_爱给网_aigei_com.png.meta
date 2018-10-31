@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "ab2113ee-c0c5-4cae-b663-440887af5619",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "2d理发类游戏素材-理发沙龙-退出2(quit2)_爱给网_aigei_com": {
+      "ver": "1.0.3",
+      "uuid": "97fa62d9-505b-4251-b0bc-68f5f07e76fb",
+      "rawTextureUuid": "ab2113ee-c0c5-4cae-b663-440887af5619",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -2,
+      "trimX": 8,
+      "trimY": 8,
+      "width": 172,
+      "height": 65,
+      "rawWidth": 188,
+      "rawHeight": 77,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

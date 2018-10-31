@@ -15,6 +15,9 @@
     "_children": [
       {
         "__id__": 2
+      },
+      {
+        "__id__": 11
       }
     ],
     "_active": true,
@@ -55,7 +58,7 @@
     "_zIndex": 0,
     "groupIndex": 0,
     "autoReleaseAssets": false,
-    "_id": "ff2a4871-b5a5-40ad-96ab-8fe35cacb65e"
+    "_id": "93521e5b-d03b-4405-aaab-c6f903b0b0f8"
   },
   {
     "__type__": "cc.Node",
@@ -73,22 +76,13 @@
       },
       {
         "__id__": 7
-      },
-      {
-        "__id__": 9
-      },
-      {
-        "__id__": 11
-      },
-      {
-        "__id__": 15
       }
     ],
     "_active": true,
     "_level": 0,
     "_components": [
       {
-        "__id__": 17
+        "__id__": 10
       }
     ],
     "_prefab": null,
@@ -135,7 +129,7 @@
     "_skewY": 0,
     "_zIndex": 0,
     "groupIndex": 0,
-    "_id": "463o19wOhKlIuoBmfluhv/"
+    "_id": "a1Gpp6liBE2aBw3wfTrRw/"
   },
   {
     "__type__": "cc.Node",
@@ -196,7 +190,7 @@
     "_skewY": 0,
     "_zIndex": 0,
     "groupIndex": 0,
-    "_id": "eawwA5YuNMyLCuN/AUcBB4"
+    "_id": "a1DK0rxONIVbSxwTsSSPGd"
   },
   {
     "__type__": "cc.Camera",
@@ -218,11 +212,11 @@
     "_depth": -1,
     "_zoomRatio": 1,
     "_targetTexture": null,
-    "_id": "b0WjcU7JhFlbYtHKzpHDfv"
+    "_id": "feF1sf/gRMK7cKQ+AQCLHS"
   },
   {
     "__type__": "cc.Node",
-    "_name": "bg_0",
+    "_name": "10164-unity类似炫舞的游戏demo源码-废弃广场_爱给网_aigei_com",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
@@ -246,23 +240,23 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 895,
-      "height": 776
+      "width": 1600,
+      "height": 1200
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0.4936739024481063,
-      "y": 0.48704193481870356
+      "x": 0.5,
+      "y": 0.5
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -1,
-      "y": -11,
+      "x": -28,
+      "y": 62,
       "z": 0
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 1.11,
+      "x": 1,
       "y": 1,
       "z": 1
     },
@@ -279,7 +273,7 @@
     "_skewY": 0,
     "_zIndex": 0,
     "groupIndex": 0,
-    "_id": "ceCTCbXD9DvKul1qTOqttq"
+    "_id": "630ZKkyapBCKGj264B8CV+"
   },
   {
     "__type__": "cc.Sprite",
@@ -292,182 +286,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "36fcb487-45eb-401b-8277-06469a846cce"
-    },
-    "_type": 0,
-    "_sizeMode": 0,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_state": 0,
-    "_atlas": null,
-    "_id": "49NILkGtBDYIxXeQZyDWFS"
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "label",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 2
-    },
-    "_children": [],
-    "_active": true,
-    "_level": 1,
-    "_components": [
-      {
-        "__id__": 8
-      }
-    ],
-    "_prefab": null,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 0,
-      "height": 40
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_position": {
-      "__type__": "cc.Vec3",
-      "x": -18,
-      "y": -259,
-      "z": 0
-    },
-    "_scale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_quat": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_zIndex": 0,
-    "groupIndex": 0,
-    "_id": "93gAq/5vpPNJ+PdbZQ90S2"
-  },
-  {
-    "__type__": "cc.Label",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 7
-    },
-    "_enabled": true,
-    "_srcBlendFactor": 1,
-    "_dstBlendFactor": 771,
-    "_useOriginalSize": false,
-    "_string": "",
-    "_N$string": "",
-    "_fontSize": 40,
-    "_lineHeight": 40,
-    "_enableWrapText": true,
-    "_N$file": null,
-    "_isSystemFontUsed": true,
-    "_spacingX": 0,
-    "_N$horizontalAlign": 1,
-    "_N$verticalAlign": 1,
-    "_N$fontFamily": "Arial",
-    "_N$overflow": 0,
-    "_id": "a7EnURs6ZFjKRtgGR7U6G/"
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "炫舞派对源码（解锁版）-宣武(xuanwu)_爱给网_aigei_com",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 2
-    },
-    "_children": [],
-    "_active": true,
-    "_level": 1,
-    "_components": [
-      {
-        "__id__": 10
-      }
-    ],
-    "_prefab": null,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 457,
-      "height": 186
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_position": {
-      "__type__": "cc.Vec3",
-      "x": 10,
-      "y": 164,
-      "z": 0
-    },
-    "_scale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_quat": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_zIndex": 0,
-    "groupIndex": 0,
-    "_id": "36jZJDNepGHYrQiYB+WZXO"
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 9
-    },
-    "_enabled": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "86928c65-cd82-486c-83fb-9110f68ccf7d"
+      "__uuid__": "3fb2a235-7c6f-4d15-ba75-a2de5cbbb828"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -482,11 +301,11 @@
     "_isTrimmedMode": true,
     "_state": 0,
     "_atlas": null,
-    "_id": "7b6GcvrZ5Ju6OIX5fGq7d4"
+    "_id": "57Zhd2z3xPpKShFpHZmO9H"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Button",
+    "_name": "button",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
@@ -496,13 +315,10 @@
     "_level": 1,
     "_components": [
       {
-        "__id__": 12
+        "__id__": 8
       },
       {
-        "__id__": 13
-      },
-      {
-        "__id__": 14
+        "__id__": 9
       }
     ],
     "_prefab": null,
@@ -516,8 +332,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
-      "height": 40
+      "width": 200,
+      "height": 80
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -526,14 +342,14 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 1,
-      "y": -186,
+      "x": 0,
+      "y": -189,
       "z": 0
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 2.19,
-      "y": 2.15,
+      "x": 0.45,
+      "y": 1.27,
       "z": 1
     },
     "_rotationX": 0,
@@ -549,20 +365,20 @@
     "_skewY": 0,
     "_zIndex": 0,
     "groupIndex": 0,
-    "_id": "edFu5zqAdKIY/qycH4bxN6"
+    "_id": "65D1+yvytAaZhNXEDVKPQT"
   },
   {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 11
+      "__id__": 7
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "3952eb9c-7954-411d-849d-532a8031c944"
+      "__uuid__": "d17202bf-46e8-4517-bc6b-7edc34c70288"
     },
     "_type": 1,
     "_sizeMode": 0,
@@ -577,14 +393,14 @@
     "_isTrimmedMode": true,
     "_state": 0,
     "_atlas": null,
-    "_id": "00OyX6ANVKX5sgE0uhpN14"
+    "_id": "f7cVasLD9BBp2oy2yQeD1f"
   },
   {
     "__type__": "cc.Button",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 11
+      "__id__": 7
     },
     "_enabled": true,
     "transition": 2,
@@ -622,54 +438,58 @@
       "a": 255
     },
     "_N$normalSprite": {
-      "__uuid__": "3952eb9c-7954-411d-849d-532a8031c944"
+      "__uuid__": "d17202bf-46e8-4517-bc6b-7edc34c70288"
     },
     "_N$pressedSprite": {
-      "__uuid__": "c831eb56-8e39-4fe9-8ddf-a78a191e93e1"
+      "__uuid__": "bfa58f11-2e9e-4e8f-a4e1-cc56124da7f9"
     },
     "pressedSprite": {
-      "__uuid__": "c831eb56-8e39-4fe9-8ddf-a78a191e93e1"
+      "__uuid__": "bfa58f11-2e9e-4e8f-a4e1-cc56124da7f9"
     },
     "_N$hoverSprite": {
-      "__uuid__": "c831eb56-8e39-4fe9-8ddf-a78a191e93e1"
+      "__uuid__": "bfa58f11-2e9e-4e8f-a4e1-cc56124da7f9"
     },
     "hoverSprite": {
-      "__uuid__": "c831eb56-8e39-4fe9-8ddf-a78a191e93e1"
+      "__uuid__": "bfa58f11-2e9e-4e8f-a4e1-cc56124da7f9"
     },
     "_N$disabledSprite": {
       "__uuid__": "29158224-f8dd-4661-a796-1ffab537140e"
     },
     "_N$target": {
-      "__id__": 11
+      "__id__": 7
     },
-    "_id": "652vXIt3BF1LDbPafG2kYd"
+    "_id": "d6LDFKz7lK5YuzzmHZuY/M"
   },
   {
-    "__type__": "1f430c3HLxG1b+pO68yD24x",
+    "__type__": "cc.Canvas",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 11
+      "__id__": 2
     },
     "_enabled": true,
-    "thiswen": {
-      "__id__": 8
+    "_designResolution": {
+      "__type__": "cc.Size",
+      "width": 960,
+      "height": 640
     },
-    "_id": "f2GUUgTYBNwY4t2NfnXLjV"
+    "_fitWidth": false,
+    "_fitHeight": true,
+    "_id": "f0d0oG+mNMK58wDPdDzdFs"
   },
   {
     "__type__": "cc.Node",
-    "_name": "炫舞派对源码（解锁版）-dahuikaishi_爱给网_aigei_com",
+    "_name": "html5类似像素鸟的游戏《小猪飞飞》源码-意识(gameo_爱给网_aigei_com",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 2
+      "__id__": 1
     },
     "_children": [],
     "_active": true,
     "_level": 1,
     "_components": [
       {
-        "__id__": 16
+        "__id__": 12
       }
     ],
     "_prefab": null,
@@ -683,8 +503,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 163,
-      "height": 42
+      "width": 250,
+      "height": 50
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -693,8 +513,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 0,
-      "y": -183,
+      "x": 480,
+      "y": 541,
       "z": 0
     },
     "_scale": {
@@ -716,23 +536,23 @@
     "_skewY": 0,
     "_zIndex": 0,
     "groupIndex": 0,
-    "_id": "59xcoSZINJp7W3mEkjd02V"
+    "_id": "6bh6B57HNI3rm8/WEGf6jk"
   },
   {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 15
+      "__id__": 11
     },
     "_enabled": true,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "692a73c2-e763-48c0-8043-76969c76e771"
+      "__uuid__": "5e2886a0-4341-45cb-a4b2-7f6c34c2297e"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -744,23 +564,6 @@
     "_isTrimmedMode": true,
     "_state": 0,
     "_atlas": null,
-    "_id": "86rjh2t9JJ1ombf7+rkbqy"
-  },
-  {
-    "__type__": "cc.Canvas",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 2
-    },
-    "_enabled": true,
-    "_designResolution": {
-      "__type__": "cc.Size",
-      "width": 960,
-      "height": 640
-    },
-    "_fitWidth": false,
-    "_fitHeight": true,
-    "_id": "87WNNur6ZB0YYpYdJ9FZye"
+    "_id": "cbglXCMt9KQoH8WE9IRzmJ"
   }
 ]

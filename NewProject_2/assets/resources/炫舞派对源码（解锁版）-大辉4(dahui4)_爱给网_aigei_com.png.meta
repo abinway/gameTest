@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "424a6024-837e-4af5-bc7a-92cfdeeb1af1",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "炫舞派对源码（解锁版）-大辉4(dahui4)_爱给网_aigei_com": {
+      "ver": "1.0.3",
+      "uuid": "c831eb56-8e39-4fe9-8ddf-a78a191e93e1",
+      "rawTextureUuid": "424a6024-837e-4af5-bc7a-92cfdeeb1af1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 198,
+      "height": 66,
+      "rawWidth": 198,
+      "rawHeight": 66,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

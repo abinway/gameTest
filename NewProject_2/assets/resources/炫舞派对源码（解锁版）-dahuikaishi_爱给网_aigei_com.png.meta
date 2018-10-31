@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "e5b9f94d-3f8b-4683-acfb-4105a9dfa0b8",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "炫舞派对源码（解锁版）-dahuikaishi_爱给网_aigei_com": {
+      "ver": "1.0.3",
+      "uuid": "692a73c2-e763-48c0-8043-76969c76e771",
+      "rawTextureUuid": "e5b9f94d-3f8b-4683-acfb-4105a9dfa0b8",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 163,
+      "height": 42,
+      "rawWidth": 163,
+      "rawHeight": 42,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
