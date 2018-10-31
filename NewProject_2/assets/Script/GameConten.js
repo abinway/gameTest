@@ -59,6 +59,7 @@ cc.Class({
         ketiji : true,
         
     },
+    
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -121,17 +122,19 @@ cc.Class({
                 this.lifevalue-=1;
                 if(this.lifevalue <0) this.lifevalue = 0;
             }
-            if(this.lifevalue == 0) {
+            if(this.lifevalue <= 0) {
                 cc.director.loadScene("GameOver");
+            } else {
+
+                this.isSucess = false;
+        //        console.log("删除节点后" + this.fangx.childrenCount);
+               
+            this.actionTime = this.actionTime - this.speed;
+            this.spri.scaleX = 0;
+            this.spri.runAction(cc.scaleTo(2,1));
+            // var liz = self.node.getChildByName('liz');
+            // liz.x = -600;
             }
-            this.isSucess = false;
-    //        console.log("删除节点后" + this.fangx.childrenCount);
-           
-        this.actionTime = this.actionTime - this.speed;
-        this.spri.scaleX = 0;
-        this.spri.runAction(cc.scaleTo(2,1));
-        // var liz = self.node.getChildByName('liz');
-        // liz.x = -600;
        
         
     }
@@ -364,13 +367,15 @@ cc.Class({
             var action = cc.sequence(cc.moveTo(0.5,nodeEnd.x,self.fangx.y),finished);
             liz.runAction(action);
             self.fangx.removeAllChildren();
-
+            window.Global = {
+               fs : self.fenshu,
+            };
               
            }
             
        }
-    }
+    },
     
-
+    
     
 });

@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
+      "x": 0.9765625,
+      "y": 0.9765625,
       "z": 1
     },
     "_quat": {
@@ -1857,7 +1857,7 @@
     "life": {
       "__id__": 34
     },
-    "lifevalue": 3,
+    "lifevalue": 1,
     "isSucess": false,
     "gamebig": false,
     "ketiji": true,

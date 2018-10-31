@@ -27,6 +27,11 @@ cc.Class({
         //         this._bar = value;
         //     }
         // },
+
+        butt : {
+            type:cc.Button,
+            default:null,
+        }
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -34,7 +39,14 @@ cc.Class({
     // onLoad () {},
 
     start () {
-
+        this.butt.node.on(cc.Node.EventType.MOUSE_DOWN, function (event) {
+            cc.director.loadScene("GameSreen");
+        });
+        var txt = this.node.getChildByName('label');
+        console.log(txt.getComponent(cc.Label).string)
+        txt.getComponent(cc.Label).string = txt.getComponent(cc.Label).string+Global.fs.toFixed(0)
+        
+        console.log("上局分数: " + Global.fs.toFixed(0))
     },
 
     // update (dt) {},
