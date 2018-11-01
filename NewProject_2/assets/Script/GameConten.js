@@ -61,6 +61,10 @@ cc.Class({
             default: null,
             type: cc.AudioClip
         },
+        audiobg2: {
+            default: null,
+            type: cc.AudioClip
+        },
         audio1 :  {
             type: cc.AudioSource,
             default: null
@@ -84,7 +88,14 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
      onLoad () {
-         cc.audioEngine.play(this.audio, true, 0.5);
+         if(Math.random() * 10 >= 5) {
+
+             cc.audioEngine.play(this.audio, true, 0.5);
+         } else {
+            cc.audioEngine.play(this.audiobg2, true, 0.5);
+         }
+      
+        
      },
 
     start () {
@@ -99,8 +110,8 @@ cc.Class({
        this.level = 0;
        this.txtlabel.string = "请做好准备...   " ;
        this.jianp();
-       this.actionTime = 5;
-       this.speed =0.2;
+       this.actionTime = 4;
+       this.speed =0.1;
        this.leveAndCco.string = "level: " + this.actionTime + " 分数: " + this.fenshu;
        this.life.string = "生命: " + this.lifevalue;
        this.isSucess = false;
@@ -124,7 +135,7 @@ cc.Class({
             }
             this.ketiji  =true;
         } else {
-            this.spri.getComponent(cc.Sprite).spriteFrame =  this.probar2.spriteFrame;
+          //  this.spri.getComponent(cc.Sprite).spriteFrame =  this.probar2.spriteFrame;
             this.tihuan = true;
             this.level++;
           
@@ -143,9 +154,15 @@ cc.Class({
                 this.lifevalue-=1;
                 this.audio4.play();
                 if(this.lifevalue <0) this.lifevalue = 0;
+                this.actionTime = 4;
+                this.maxcountall = 3;
+                this.level = 0
+                this.spri.getComponent(cc.Sprite).spriteFrame =  this.probar2.spriteFrame;
+                this.spri.runAction(cc.scaleTo(2,1));
             }
             if(this.lifevalue <= 0) {
                 cc.audioEngine.stopAll();
+                this.spri.scaleX = 0;
                 cc.director.loadScene("GameOver");
             } else {
 
@@ -153,8 +170,8 @@ cc.Class({
         //        console.log("删除节点后" + this.fangx.childrenCount);
                
             this.actionTime = this.actionTime - this.speed;
-            this.spri.scaleX = 0;
-            this.spri.runAction(cc.scaleTo(2,1));
+            this.spri.scaleX = 1;
+         //   this.spri.runAction(cc.scaleTo(0.1,1));
             // var liz = self.node.getChildByName('liz');
             // liz.x = -600;
             }
@@ -225,9 +242,7 @@ cc.Class({
                     }
                     this.zhiz = 0;
                     this.zhiling.splice(0,this.zhiling.length);
-                    this.actionTime = 5;
-                    this.maxcountall = 3;
-                    this.level = 0
+                  
 
                 }
             }
