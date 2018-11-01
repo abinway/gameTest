@@ -13,6 +13,10 @@ cc.Class({
 
     properties: {
       thiswen : cc.Label,
+      audio :  {
+        type: cc.AudioSource,
+        default: null
+     },
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -30,7 +34,12 @@ cc.Class({
     wenz : function () {
         console.log("点击");
        this.thiswen.string = "加载中,请稍等..."
-       cc.director.loadScene("GameSreen");
+       this.audio.play();
+
+       this.scheduleOnce(function() {
+        // 这里的 this 指向 component
+        cc.director.loadScene("GameSreen");
+      }, 1);
     }
     
 

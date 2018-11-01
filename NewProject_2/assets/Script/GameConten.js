@@ -57,6 +57,26 @@ cc.Class({
         isSucess : false,
         gamebig : false,
         ketiji : true,
+        audio: {
+            default: null,
+            type: cc.AudioClip
+        },
+        audio1 :  {
+            type: cc.AudioSource,
+            default: null
+         },
+         audio2 :  {
+            type: cc.AudioSource,
+            default: null
+         },
+         audio3 :  {
+            type: cc.AudioSource,
+            default: null
+         },
+         audio4 :  {
+            type: cc.AudioSource,
+            default: null
+         },
         
     },
     
@@ -64,7 +84,7 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
      onLoad () {
-      //  var self = this,
+         cc.audioEngine.play(this.audio, true, 0.5);
      },
 
     start () {
@@ -84,6 +104,7 @@ cc.Class({
        this.leveAndCco.string = "level: " + this.actionTime + " 分数: " + this.fenshu;
        this.life.string = "生命: " + this.lifevalue;
        this.isSucess = false;
+       this.audio1.play();
     },
 
     update(dt) {
@@ -120,9 +141,11 @@ cc.Class({
             this.zhiz = 0;
             if(!this.isSucess && this.gamebig) {
                 this.lifevalue-=1;
+                this.audio4.play();
                 if(this.lifevalue <0) this.lifevalue = 0;
             }
             if(this.lifevalue <= 0) {
+                cc.audioEngine.stopAll();
                 cc.director.loadScene("GameOver");
             } else {
 
@@ -190,6 +213,7 @@ cc.Class({
                 } else {
                     //输入错误了
                     console.log("error: ")
+                    this.audio4.play();
                     var fangx = this.fangx;
                     var count = fangx.childrenCount;
                     for(var m = 0 ; m < count;m++) {
@@ -351,7 +375,12 @@ cc.Class({
            if(this.ketiji) {
 
                console.log("提交" +self.spri.scaleX);
+               this.audio2.play();
+              
                this.isSucess = true;
+               if((1-self.spri.scaleX) * 100  > 70) {
+                    this.audio3.play(); 
+               }
                self.fenshu +=  (1-self.spri.scaleX) * 100
                this.leveAndCco.string = "level: " + this.actionTime.toFixed(2) + " 分数: " + Math.floor(this.fenshu);
                this.ketiji = false;
@@ -362,7 +391,7 @@ cc.Class({
                liz.x = -nodeEnd.x;
                liz.y = self.fangx.y;
                var finished = cc.callFunc(function(target, liz) {
-                liz.x = -600;
+                liz.x = -1600;
             }, this, liz);//动作完成后会给玩家加100分
             var action = cc.sequence(cc.moveTo(0.5,nodeEnd.x,self.fangx.y),finished);
             liz.runAction(action);
