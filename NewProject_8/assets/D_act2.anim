@@ -1,0 +1,85 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "D_act2",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.6875,
+  "sample": 16,
+  "speed": 1.5,
+  "wrapMode": "0",
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "04659922-5ffa-47e6-b59d-6f049da3dbde"
+            }
+          },
+          {
+            "frame": 0.0625,
+            "value": {
+              "__uuid__": "96cbdc4e-7ff0-467c-9194-b1f4059166ca"
+            }
+          },
+          {
+            "frame": 0.125,
+            "value": {
+              "__uuid__": "d5aa4c80-298b-427e-96c1-d81f18535652"
+            }
+          },
+          {
+            "frame": 0.1875,
+            "value": {
+              "__uuid__": "3348fdf7-04cd-4e8f-9731-9575e7e6e582"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "eba71122-f00c-4c73-b017-e6a07afbe191"
+            }
+          },
+          {
+            "frame": 0.3125,
+            "value": {
+              "__uuid__": "b89df875-f5dc-4739-93df-57236b121fb4"
+            }
+          },
+          {
+            "frame": 0.375,
+            "value": {
+              "__uuid__": "127d1f0a-0e08-4f04-aecb-729a364ddcae"
+            }
+          },
+          {
+            "frame": 0.4375,
+            "value": {
+              "__uuid__": "e135b4ee-5fbc-4743-b541-868a4a4f40d8"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "c745b1fd-1373-42a4-babd-27f0e3dbb0a9"
+            }
+          },
+          {
+            "frame": 0.5625,
+            "value": {
+              "__uuid__": "cc0a9ff5-b428-4666-984c-bb8e057989db"
+            }
+          },
+          {
+            "frame": 0.625,
+            "value": {
+              "__uuid__": "f037dccc-ade0-47c1-a8f2-82b509166d11"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}
